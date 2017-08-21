@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fz="http://schemas.android.com/apk/com.fz.googleplayteach.ui.view.RatioLayout"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_bg_selector"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+        <com.fz.googleplayteach.ui.view.RatioLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            fz:ratio="2.43">
+            <ImageView
+                android:id="@+id/iv_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/subject_default"/>
+        </com.fz.googleplayteach.ui.view.RatioLayout>
+        <TextView
+            android:id="@+id/tv_tittle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textColor="#000"
+            android:text="标题"/>
+    </LinearLayout>
+
+</LinearLayout>
